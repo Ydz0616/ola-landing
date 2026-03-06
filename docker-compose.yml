@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  ola-landing:
+    build: .
+    container_name: ola-landing
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - SMTP_USER=zhangyuandongnb@gmail.com
+      - SMTP_PASS=dfnk cuuu frnc oneo
+      - SMTP_FROM="Ola" <zhangyuandongnb@gmail.com>
+      - SMTP_TO=zhangyuandongnb@gmail.com
+    volumes:
+      - ./data:/app/data

@@ -1,0 +1,5 @@
+node_modules
+dist
+.env
+demo_requests.db
+.DS_Store
