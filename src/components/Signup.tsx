@@ -83,6 +83,18 @@ export default function GetDemo() {
               {message}
             </p>
           )}
+
+          {/* Join Beta — secondary link for users who already have an invite code */}
+          <p className="mt-8 text-sm text-gray-500">
+            Already have an invite?{' '}
+            <a
+              href="https://app.ola.services"
+              className="text-gray-300 hover:text-white transition-colors underline underline-offset-4 decoration-white/20 hover:decoration-white/60 inline-flex items-center gap-1 group"
+            >
+              Join Beta
+              <span className="inline-block transition-transform group-hover:translate-x-0.5">→</span>
+            </a>
+          </p>
         </motion.div>
       </div>
     </section>

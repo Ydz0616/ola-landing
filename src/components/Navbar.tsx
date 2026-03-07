@@ -45,6 +45,14 @@ export default function Navbar() {
             <Globe size={16} />
             {language === 'en' ? '中文' : 'EN'}
           </button>
+          {/* Login — outline style, secondary to "Get a Demo" */}
+          <a
+            href="https://app.ola.services"
+            className="hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-white border border-white/20 hover:border-white/50 hover:bg-white/5 transition-colors rounded-sm uppercase tracking-wider"
+          >
+            Login
+          </a>
+          {/* Get a Demo — solid style, primary CTA */}
           <a
             href="#demo"
             className="hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-black bg-white hover:bg-gray-200 transition-colors rounded-sm uppercase tracking-wider"
@@ -80,10 +88,19 @@ export default function Navbar() {
                 {language === 'en' ? 'Switch to 中文' : 'Switch to English'}
                 <Globe size={16} />
               </button>
+              {/* Login — mobile */}
+              <a
+                href="https://app.ola.services"
+                onClick={() => setMobileMenuOpen(false)}
+                className="inline-flex items-center justify-center px-5 py-3 text-sm font-medium text-white border border-white/20 hover:border-white/50 transition-colors rounded-sm uppercase tracking-wider w-full"
+              >
+                Login
+              </a>
+              {/* Get a Demo — mobile */}
               <a
                 href="#demo"
                 onClick={() => setMobileMenuOpen(false)}
-                className="inline-flex items-center justify-center px-5 py-3 mt-4 text-sm font-medium text-black bg-white hover:bg-gray-200 transition-colors rounded-sm uppercase tracking-wider w-full"
+                className="inline-flex items-center justify-center px-5 py-3 text-sm font-medium text-black bg-white hover:bg-gray-200 transition-colors rounded-sm uppercase tracking-wider w-full"
               >
                 {t('nav.demo')}
               </a>
