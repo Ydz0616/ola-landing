@@ -28,12 +28,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 z-50">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2L2 22H22L12 2Z" fill="white" />
-            <path d="M12 8L6 20H18L12 8Z" fill="black" />
-          </svg>
-          <span className="text-white font-bold text-xl tracking-wide uppercase">Ola</span>
+        <a href="#" className="flex items-center z-50">
+          <img src="/assets/ola-logo.png" alt="Ola" className="h-6" />
         </a>
 
         {/* Action Buttons */}
